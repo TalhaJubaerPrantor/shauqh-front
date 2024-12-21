@@ -1,6 +1,6 @@
 import { Col } from "react-bootstrap";
 import "./product-card.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../app/features/cart/cartSlice";
@@ -39,7 +39,16 @@ const ProductCard = ({ title, productItem }) => {
           <i className="fa fa-star"></i>
         </div>
         <div className="price">
-          <h4>Tk:{productItem.price}</h4>
+          <h4 style={{fontFamily:"serif"}}>Tk:{productItem.price}</h4>
+          <Link
+              aria-label="Go to Cart Page"
+              to="/cart"
+              className="buy-btn"
+              onClick={() => handelAdd(productItem)}
+              // data-num={cartList.length}
+          >
+          Buy Now              
+          </Link>
           <button
             aria-label="Add"
             type="submit"

@@ -81,7 +81,18 @@ const Cart = () => {
               <h2>Cart Summary</h2>
               <div className=" d_flex">
                 <h4>Total Price :</h4>
-                <h3>${totalPrice}.00</h3>
+                <h2>${totalPrice}.00</h2>
+                
+                <h3 style={{paddingTop:"15px"}}>Name:</h3>
+                <input className="customer-data" type="text" name="name" placeholder=" Enter your name"/> 
+                <h3 style={{paddingTop:"15px"}}>Phone:</h3>
+                <input className="customer-data" type="number" name="phone" placeholder=" Enter your phone number"/>
+                <h3 style={{paddingTop:"15px"}}>Address:</h3>
+                <textarea className="customer-data" style={{height:"80px"}} type="text" name="address" placeholder=" Enter your address"/> <br />
+                <button class="confirm "> 
+                  Confirm Order
+                </button>            
+
               </div>
             </div>
           </Col>

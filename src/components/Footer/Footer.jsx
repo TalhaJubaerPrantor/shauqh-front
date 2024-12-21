@@ -13,7 +13,7 @@ const Footer = () => {
                   <img style={{height:"50px",borderRadius:"5px"}} src={logo} alt="" />
                   <h1>Shauqh Luxury</h1>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
+              <p>Enhance your aura with our exclusive selection of luxurious perfumes, each crafted to make a lasting impression. Every fragrance is a work of art, embodying elegance, allure, and timeless sophistication.</p>
             </Col>
             <Col md={3} sm={5} className='box'>
               <h2>About Us</h2>

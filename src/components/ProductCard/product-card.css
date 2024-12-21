@@ -9,12 +9,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #0f3460;
+    background: red;
     padding: 3px 10px;
     font-size: 12px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     color: #fff;
-    margin: 10px;
+    /* margin: 10px; */
+    border-bottom-right-radius: 15px;
+    /* border: 3px solid lightgray; */
 }
 
 .product {
@@ -47,7 +49,19 @@
 }
 
 .price h4 {
-    margin: 20px 0 10px;
+    margin: 10px 0 10px;
+}
+
+.buy-btn{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #0d6efd;
+    width: 100px;
+    border-radius: 5px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 50px;
 }
 
 .price button {
@@ -101,3 +115,4 @@ button.add {
 .product:hover .product-like {
     opacity: 1;
 }
+
