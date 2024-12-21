@@ -22,7 +22,7 @@ const ProductDetails = ({ selectedProduct }) => {
       <Container>
         <Row className="justify-content-center">
           <Col md={6}>
-            <img style={{height:450,width:650}} loading="lazy" src={selectedProduct?.imgUrl} alt="" />
+            <img className="details-img"  loading="lazy" src={selectedProduct?.imgUrl} alt="" />
           </Col>
           <Col md={6}>
             <h2>{selectedProduct?.productName}</h2>

@@ -8,7 +8,7 @@ const SlideCard = ({title,desc,cover}) => {
           <Col md={6}>
             <h1>{title}</h1>
             <p>{desc}</p>
-            <button className='btn-primary'>Visit Collections</button>
+            <span className='slider-btn'>Visit Collections</span>
           </Col>
           <Col md={6}>
             <img src={cover} alt="#" />

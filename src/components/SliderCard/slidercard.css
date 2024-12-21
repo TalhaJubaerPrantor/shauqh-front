@@ -24,12 +24,25 @@
     padding: 10px;
 }
 
-.homeSlide ul li button {
+.slider-btn{
+    font-size: 15px !important;
+    color: #ffffff;
+    background-color: black;
+    display: inline-block;
+    text-align: center;
+    height: 35px;
+    width: 150px;
+    padding-top: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.homeSlide ul li .slider-btn {
     background: transparent !important;
     color: transparent !important;
 }
 
-.homeSlide ul li button::before {
+.homeSlide ul li .slider-btn::before {
     font-size: 15px !important;
     color: #0f3460;
     position: absolute;

@@ -4,10 +4,21 @@
   object-fit: contain;
 }
 
+.details-img{
+  height: 450px;
+  width: 650px;
+}
+
 @media (max-width: 767px) {
   .product-page .row {
     gap: 30px;
   }
+  
+  .details-img{
+    height: 450px;
+    width: 350px;
+  }
+
 }
 
 .product-page .rate {

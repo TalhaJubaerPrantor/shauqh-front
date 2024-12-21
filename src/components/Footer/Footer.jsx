@@ -18,10 +18,11 @@ const Footer = () => {
             <Col md={3} sm={5} className='box'>
               <h2>About Us</h2>
               <ul>
-                <li>Careers</li>
-                <li>Our Stores</li>
+                <li>Career at Shauqh Luxury</li> 
+                <li>&nbsp;&nbsp;-Join Shauqh Affiliate program</li>
+                {/* <li>Our Stores</li>
                 <li>Our Cares</li>
-                <li>Terms & Conditions</li>
+                <li>Terms & Conditions</li> */}
                 <li>Privacy Policy</li>
               </ul>
             </Col>
