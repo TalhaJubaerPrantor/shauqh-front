@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -6,6 +6,7 @@ import {
   decreaseQty,
   deleteProduct,
 } from "../app/features/cart/cartSlice";
+import NavBar from "../components/Navbar/Navbar";
 
 const Cart = () => {
   const { cartList } = useSelector((state) => state.cart);
@@ -23,6 +24,8 @@ const Cart = () => {
     // }
   }, []);
   return (
+    <Fragment>
+      <NavBar/>
     <section className="cart-items">
       <Container>
         <Row className="justify-content-center">
@@ -99,6 +102,7 @@ const Cart = () => {
         </Row>
       </Container>
     </section>
+    </Fragment>
   );
 };
 

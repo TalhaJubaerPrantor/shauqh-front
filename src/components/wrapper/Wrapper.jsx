@@ -6,6 +6,8 @@ import { serviceData } from "../../utils/products"
 const Wrapper = () => {
   return (
       <section className='wrapper background'>
+        
+        
         <Container>
           <Row>
           {serviceData.map((val, index) => {
@@ -21,6 +23,7 @@ const Wrapper = () => {
           })}
           </Row>
         </Container>
+        
       </section>
   )
 }

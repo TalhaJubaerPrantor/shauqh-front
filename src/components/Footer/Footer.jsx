@@ -2,6 +2,7 @@ import React from "react"
 import "./style.css"
 import logo from "../../Images/shauqh-logo.jpg"
 import { Col, Container, Row } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
               <h2>About Us</h2>
               <ul>
                 <li>Career at Shauqh Luxury</li> 
-                <li>&nbsp;&nbsp;-Join Shauqh Affiliate program</li>
+                <Link className="footer-link" to={"/admin/dashboard"}>&nbsp;&nbsp;-Join Shauqh Affiliate program</Link>
                 {/* <li>Our Stores</li>
                 <li>Our Cares</li>
                 <li>Terms & Conditions</li> */}

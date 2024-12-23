@@ -15,6 +15,11 @@ footer h1 {
   width: max-content;
 }
 
+.footer-link{
+  text-decoration: none;
+  color: white;
+}
+
 footer .logo {
   color: white;
   display:flex;

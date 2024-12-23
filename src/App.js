@@ -1,11 +1,12 @@
 import { lazy, Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavBar from "./components/Navbar/Navbar";
+// import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { SideMenu } from "./components/Admin-Side/Dashboard/SideMenu";
 const Home = lazy(() => import("./pages/Home"));
 const Shop = lazy(() => import("./pages/Shop"));
 const Cart = lazy(() => import("./pages/Cart"));
@@ -25,12 +26,13 @@ function App() {
           pauseOnHover
           theme="light"
         />
-        <NavBar />
+    
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/:id" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/admin/dashboard" element={<SideMenu/>} />
         </Routes>
         <Footer />
       </Router>

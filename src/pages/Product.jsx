@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import ProductDetails from "../components/ProductDetails/ProductDetails";
 import ProductReviews from "../components/ProductReviews/ProductReviews";
 import useWindowScrollToTop from "../hooks/useWindowScrollToTop";
+import NavBar from "../components/Navbar/Navbar";
 
 const Product = () => {
   const { id } = useParams();
@@ -32,6 +33,7 @@ const Product = () => {
 
   return (
     <Fragment>
+      <NavBar/>
       <Banner title={selectedProduct?.productName} />
       <ProductDetails selectedProduct={selectedProduct} />
       <ProductReviews selectedProduct={selectedProduct} />
