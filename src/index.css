@@ -107,6 +107,11 @@ button {
     width: 300px;
 }
 
+.customer-data::-webkit-outer-spin-button,
+.customer-data::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .cart-items {
   background: #f6f9fc;

@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -118,9 +118,11 @@ const Cart = () => {
                 <input className="customer-data" type="number" name="phone" placeholder=" Enter your phone number"/>
                 <h3 style={{paddingTop:"15px"}}>Address:</h3>
                 <textarea className="customer-data" style={{height:"80px"}} type="text" name="address" placeholder=" Enter your address"/> <br />
-                <button class="confirm " type="submit"> 
+                <button className="confirm " type="submit"> 
                   Confirm Order
-                </button>            
+                </button>        
+                <br />
+                <span style={{fontFamily:"monochrom",color:"red",display:(empty?"":"none")}} >Name,Phone,Address field can't be empty</span>    
                 </form>
               </div>
             </div>
