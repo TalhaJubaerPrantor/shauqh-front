@@ -111,16 +111,17 @@ const Cart = () => {
                 <h4>Total Price :</h4>
                 <h2>${totalPrice}.00</h2>
                 
+                <form onSubmit={createOrder}>
                 <h3 style={{paddingTop:"15px"}}>Name:</h3>
                 <input className="customer-data" type="text" name="name" placeholder=" Enter your name"/> 
                 <h3 style={{paddingTop:"15px"}}>Phone:</h3>
                 <input className="customer-data" type="number" name="phone" placeholder=" Enter your phone number"/>
                 <h3 style={{paddingTop:"15px"}}>Address:</h3>
                 <textarea className="customer-data" style={{height:"80px"}} type="text" name="address" placeholder=" Enter your address"/> <br />
-                <button class="confirm "> 
+                <button class="confirm " type="submit"> 
                   Confirm Order
                 </button>            
-
+                </form>
               </div>
             </div>
           </Col>
