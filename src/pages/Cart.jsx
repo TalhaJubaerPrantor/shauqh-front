@@ -23,6 +23,31 @@ const Cart = () => {
     //   setCartItem(JSON.parse(storedCart));
     // }
   }, []);
+
+  let [empty,setEmpty]=useState(false);
+  let customerDetails=[]
+  const createOrder=(e)=>{
+       e.preventDefault()
+       let inpName=e.target.name.value
+       let inpPhone=e.target.phone.value
+       let inpAddress=e.target.address.value
+      if(inpName===""||inpPhone===""||inpAddress===""){
+        setEmpty(true);
+      }else{
+        setEmpty(false);
+
+
+
+      let customer={name:inpName,phone:inpPhone,address:inpAddress}  
+      customerDetails.push(customer)
+      customerDetails.push(cartList)
+      console.log(customerDetails)
+      }   
+  }
+
+
+
+
   return (
     <Fragment>
       <NavBar/>
