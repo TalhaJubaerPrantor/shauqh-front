@@ -15,7 +15,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className={`sidebar ${isCollapsed ? 'collapsed' : ''} sidebar-container` }>
+    <div className={`sidebar ${isCollapsed ? 'collapsed' : ''} ` }>
       <div className="sidebar-header">
         <h3 className="brand">
           <i className="fas fa-anchor"></i>

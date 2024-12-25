@@ -1,4 +1,9 @@
 .dashboard-container{
-    display: grid;
-    grid-template-columns: 20% 80%;
+    display: flex;
+    
+}
+
+.admin-contents{
+    width: -webkit-fill-available;
+    padding-left: 20px;
 }
